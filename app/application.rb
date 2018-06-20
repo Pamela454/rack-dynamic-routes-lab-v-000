@@ -9,7 +9,7 @@ class Application
       if @@items.each do |item|
         item == "/<Item Name"
         resp.write item.price
-      elsif
+      else
         resp.write "Item not found"
         resp.status = 400
     else
