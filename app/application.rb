@@ -3,9 +3,6 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
-    Item.new("Figs", 34.2)
-    Item.new("Pears", 0.99)
-
     @@items = []
 
     @@items << Item.new("Figs", 34.2)
