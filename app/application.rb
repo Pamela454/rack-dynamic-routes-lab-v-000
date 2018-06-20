@@ -17,7 +17,6 @@ class Application
         resp.status = 400
       end
     else
-      req.path !="/<Item Name>"
       resp.write "Route not found"
       resp.status = 404
     end
