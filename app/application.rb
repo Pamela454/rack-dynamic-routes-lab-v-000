@@ -13,8 +13,8 @@ class Application
         item == "items/<Item Name"
         resp.write item.price
       else
-        resp.write "Item not found"
         resp.status = 400
+        resp.write "Item not found"
       end
     else
       resp.write "Route not found"
