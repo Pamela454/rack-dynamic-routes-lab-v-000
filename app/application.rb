@@ -6,7 +6,10 @@ class Application
     Item.new("Figs", 34.2)
     Item.new("Pears", 0.99)
 
-    @@items = [("Figs", 3.42), ("Pears", 0.99)]
+    @@items = []
+
+    @@items << Item.new("Figs", 34.2)
+    
 
     if req.path=="/<Item Name>"
       if @@items.each do |item|
