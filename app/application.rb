@@ -11,7 +11,7 @@ class Application
 #binding.pry
     if req.path=="/items/"
       i_name = req.path.split("/items/").last
-      if @@items.each do |item|
+      if @@items.find do |item|
         item.name == "i_name"
         resp.write item.price
       end
