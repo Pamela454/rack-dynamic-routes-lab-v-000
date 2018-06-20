@@ -5,4 +5,8 @@ class Item
     @name = name
     @price = price
   end
+
+  def display_price
+    puts @price
+  end
 end
