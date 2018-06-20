@@ -10,7 +10,7 @@ class Application
 
     if req.path.match(/items/)
       i_name = req.path.split("/items/").last
-      if item =@@items.detect do |item|
+      if item =@@items.detect do |item| #returns first item for which block is not false 
         item.name == i_name
       end
         resp.write item.price
