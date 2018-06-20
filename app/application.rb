@@ -10,9 +10,9 @@ class Application
     @@items << Item.new("Pears", 0.99)
 
     if req.path.match=="items/"
-      
+
       if @@items.each do |item|
-        item == "items/<Item Name"
+        item == "items/"
         end
         resp.write item.price
       else
