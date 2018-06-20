@@ -7,6 +7,7 @@ class Application
 
     if req.path=="/<Item Name>"
       if @@items.each do |item|
+        item == "/<Item Name"
         resp.write item.price
       elsif
         resp.write "Item not found"
