@@ -9,7 +9,7 @@ class Application
     @@items = []
 
     @@items << Item.new("Figs", 34.2)
-    
+    @@items << Item.new("Pears", 0.99)
 
     if req.path=="/<Item Name>"
       if @@items.each do |item|
