@@ -4,10 +4,10 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
-    @@items
+    @@items = ["Figs",3.42]
 
     if req.path=="/<Item Name>"
-      if 
+      if
         resp.write item.price
       elsif
         resp.write "Item not found"
