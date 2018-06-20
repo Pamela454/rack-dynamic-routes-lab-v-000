@@ -4,7 +4,7 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
-    @@items = ["Figs",3.42]
+    @@items = ["Figs",3.42, "Pears",0.99]
 
     if req.path=="/<Item Name>"
       if
