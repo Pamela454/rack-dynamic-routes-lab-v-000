@@ -13,8 +13,8 @@ class Application
       i_name = req.path.split("/items/").last
       if @@items.each do |item|
         item.name == "i_name"
-        end
         resp.write item.price
+      end
       else
         resp.status = 400
         resp.write "Item not found"
