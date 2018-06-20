@@ -11,6 +11,7 @@ class Application
     if req.path.match=="items/<Item Name>"
       if @@items.each do |item|
         item == "items/<Item Name"
+      end
         resp.write item.price
       else
         resp.status = 400
