@@ -8,7 +8,7 @@ class Application
     @@items << Item.new("Figs", 34.2)
     @@items << Item.new("Pears", 0.99)
 
-    if req.path=="/<Item Name>"
+    if req.path.match=="items/<Item Name>"
       if @@items.each do |item|
         item == "/<Item Name"
         resp.write item.price
