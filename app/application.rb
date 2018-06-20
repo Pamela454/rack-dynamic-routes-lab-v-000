@@ -6,7 +6,7 @@ class Application
 
     @@items = []
 
-    @@items << Item.new("Figs", 34.2)
+    @@items << Item.new("Figs", 3.42)
     @@items << Item.new("Pears", 0.99)
 #binding.pry
     if req.path.match(/items/)
