@@ -8,7 +8,7 @@ class Application
     @@items << Item.new("Figs", 3.42)
     @@items << Item.new("Pears", 0.99)
 
-    if req.path.match "/items/"
+    if req.path.match (/items/)
       i_name = req.path.split("/items/").last
       if item =@@items.map do |item|
         item.name == i_name
