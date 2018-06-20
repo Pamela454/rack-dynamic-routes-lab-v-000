@@ -3,6 +3,9 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
+    Item.new("Figs", 34.2)
+    Item.new("Pears", 0.99)
+
     @@items = [("Figs", 3.42), ("Pears", 0.99)]
 
     if req.path=="/<Item Name>"
