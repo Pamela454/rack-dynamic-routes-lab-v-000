@@ -9,7 +9,7 @@ class Application
     @@items << Item.new("Figs", 3.42)
     @@items << Item.new("Pears", 0.99)
 #binding.pry
-    if req.path == "/items/"
+    if req.path == "/items"
       i_name = req.path.split("/items/").last
       if item =@@items.find do |item|
         item.name == i_name
