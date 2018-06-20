@@ -10,7 +10,7 @@ class Application
     @@items << Item.new("Pears", 0.99)
 
     if req.path.match=="/items/"
-
+      i_name = req.path.split("/items/").last
       if @@items.each do |item|
         item == "/items/"
         end
