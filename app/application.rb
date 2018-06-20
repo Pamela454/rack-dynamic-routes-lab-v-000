@@ -8,7 +8,7 @@ class Application
 
     @@items << Item.new("Figs", 34.2)
     @@items << Item.new("Pears", 0.99)
-binding.pry 
+binding.pry
     if req.path.match=="items/<Item Name>"
       if @@items.each do |item|
         item == "items/<Item Name"
