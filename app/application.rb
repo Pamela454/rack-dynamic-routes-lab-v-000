@@ -10,7 +10,7 @@ class Application
 
     if req.path.match(/items/)
       i_name = req.path.split("/items/").last
-      if item =@@items.find do |item|
+      if item =@@items.detect do |item|
         item.name == i_name
       end
         resp.write item.price
